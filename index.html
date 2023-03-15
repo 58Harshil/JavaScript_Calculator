@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+</head>
+<body> 
+    <center>
+        <p class="text-3xl font-bold mt-10">JavaScript Calculator</p>
+    <div class="bg-neutral-800 text-white  mx-16 mt-16 lg:mx-96 md:mx-24 md:mr-24 md:ml-24 rounded-lg py-5">
+        <form name="form1">
+            <input  type="text" name = "answer" class=" text-white text-center text-xl py-4  bg-neutral-800 rounded-md"><br><br>
+             <div class="space-x-2 text-xl ">
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4 text-yellow-500" type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+            </div>
+            <br><br>
+            <div class="space-x-2 text-xl ">
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4 text-yellow-500" type = "button" value = "-" onclick = "form1.answer.value += '-' "> 
+            </div> 
+            <br> <br>  
+            <div class="space-x-2 text-xl " >
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4 text-yellow-500" type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+            </div>
+            <br> <br>  
+    
+             <div class="space-x-2 text-xl ">
+            <input class="bg-gray-600 p-3 rounded-full px-4 text-yellow-500" type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4" type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4 text-yellow-500" type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+            <input class="bg-gray-600 p-3 rounded-full px-4 text-yellow-500" type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) "> 
+            </div> 
+            <br>   
+ 
+            <input class="bg-yellow-500 text-xl font-bold rounded-lg py-2 px-16 ml-3" type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >  
+            <br>   
+        </form>
+    </div>
+    </center>
+</body>
+</html>
